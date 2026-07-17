@@ -35,4 +35,7 @@ Failing on the first iteration would be understandable, as most bugs in code tak
 * Attempt 1: Run the program again in case it was a 'heisenbug'
   * FAIL: The bug was in the actual code, not just a bad run.
 * Attempt 2: Introduce the custom class to handle the bound selection in the sorting method
-  * FAIL: Though still a great decision, the bound selection was not the issue. It only simplified the code file I was working in without solving the issue. 
+  * FAIL: Though still a great decision, the bound selection was not the issue. It only simplified the code file I was working in without solving the issue.
+* Attempt 3: Change the index array to a vector, in case the indexes are not being properly saved. Got the idea after noticing that the first item ended up being a 1 by the time the list stopped properly sorting
+* Attempt 4: Move the vector to the custom class in order to keep the scope in main
+* Attempt 5: Temporarily hard-code the proper left and right bounds that should be used on iteration 4
