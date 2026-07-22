@@ -37,5 +37,7 @@ Failing on the first iteration would be understandable, as most bugs in code tak
 * Attempt 2: Introduce the custom class to handle the bound selection in the sorting method
   * FAIL: Though still a great decision, the bound selection was not the issue. It only simplified the code file I was working in without solving the issue.
 * Attempt 3: Change the index array to a vector, in case the indexes are not being properly saved. Got the idea after noticing that the first item ended up being a 1 by the time the list stopped properly sorting
-* Attempt 4: Move the vector to the custom class in order to keep the scope in main
+  * FAIL: While still not a terrible idea especially for making things less hard-coded, it was once again not impacting the right parts of the program to influence the bug. Thinking that the indexes weren't the issue, this is what sent me down a major rabbit hole
+* Attempt 4: Move the vector to the custom class in order to keep the scope in main. My theory was that somehow the use of a globalized list of values was part of the issue, so I converted to a more local scope, which is more familiar to me
+  * FAIL: Like attempt 2, it was just an optimization of the files I was working with, not a real improvement for the code
 * Attempt 5: Temporarily hard-code the proper left and right bounds that should be used on iteration 4
